@@ -62,7 +62,7 @@ Return the **minimum total cost** to make the grid satisfy this rule.
 * Iterate **column by column** (not row-wise).
 * For each cell from top to bottom:
 
-  * If the current value is not strictly greater than the one above it, increment it to the required value (`above + 1`).
+  * If the current value is not strictly greater than the one above it, increment it to the required value.
   * Track the total cost based on how much was increased.
 
 ### ✅ Python Solution
