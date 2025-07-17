@@ -28,14 +28,6 @@ Return the **maximum possible sum** of distinct counts among all valid splits.
 
 ```python
 def getMaxSum(arr: list[int]) -> int:
-    """
-    Given an array of integers, this function calculates the maximum sum of two non-overlapping subarrays.
-    The first subarray must end before the second subarray starts, and both subarrays must be non-empty.
-    The function uses a two-pass approach to count unique elements in the left and right parts of the array.
-    The maximum sum is calculated by combining the counts of unique elements from both parts.
-    :param arr: list[int]: The input array of integers.
-    :return: int: The maximum sum of unique elements from two non-overlapping subarrays.
-    """
     n = len(arr)
     leftCounter, rightCounter = [0] * n, [0] * n
 
@@ -77,14 +69,6 @@ Return the **minimum total cost** to make the grid satisfy this rule.
 
 ```python
 def getMinimumCost(visibilityScore: list[list[int]]) -> int:
-    """
-    Given a 2D list of visibility scores, this function calculates the minimum cost to ensure that each element in the
-    second row is greater than the element directly above it in the first row. The cost is defined as the difference
-    needed to increase the visibility score of an element in the second row to be greater than the element above it.
-    The function iterates through each column and adjusts the visibility scores as necessary, accumulating the total cost.
-    :param visibilityScore: list[list[int]]: A 2D list where each element represents the visibility score of a cell.
-    :return: int: The total cost to adjust the visibility scores.
-    """
     n, m = len(visibilityScore), len(visibilityScore[0])
     totalCost = 0
 
